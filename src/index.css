@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-slate-50 text-slate-900;
+  }
+}
+
+.glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); }
+
+/* Toggle Switch styling */
+.toggle-checkbox:checked { right: 0; border-color: #22c55e; }
+.toggle-checkbox:checked + .toggle-label { background-color: #22c55e; }
+.toggle-checkbox { right: 0; z-index: 1; border-color: #ef4444; transition: all 0.3s; }
+.toggle-label { background-color: #ef4444; transition: all 0.3s; }
+
+.card-shadow { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03); }
